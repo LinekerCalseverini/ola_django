@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-wi^jk+!)adxwt&vuex)0j46_&godlbloa7b+@@x6f3ys=kx$^4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -123,6 +125,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'base' / 'static'
 ]
+STATIC_ROOT = BASE_DIR / 'static_files'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
